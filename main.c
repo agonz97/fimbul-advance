@@ -1,4 +1,5 @@
 #include "lib.h"
+#include "state.h"
 
 /* prototypes */
 void init();
@@ -15,6 +16,7 @@ OBJ_ATTR shadowOAM[128];
 
 void init() {
 	buttons = BUTTONS;
+	goToStartState();
 }
 
 int main(void) {
@@ -25,6 +27,7 @@ int main(void) {
         oldButtons = buttons;
         buttons = BUTTONS;
 
+        state();
 	}
 
 	return 0; /* terminate */

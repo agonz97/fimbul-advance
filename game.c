@@ -1,3 +1,6 @@
+#include "game.h"
+#include "lib.h"
+
 void animateSprite(SPRITE *s) {
     if (++s->aniCounter % s->aniSpeed == 0) {
         s->curFrame += (s->height / 8);
