@@ -1,0 +1,9 @@
+Makefile
+resources/
+
+*.i
+*.o
+*.s
+
+*.elf
+*.gba
